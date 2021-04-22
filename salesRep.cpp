@@ -1,53 +1,53 @@
-#include "client.h"
+#include "salesRep.h"
 #include <iostream>
 
 using namespace std;
 
-Client::Client()
+SalesRep::SalesRep()
 {
   name = "noName";
   shortAdress = "noAdress";
   salesToDate = "noSalesToDate";
 }
 
-Client::Client(string name, string shortAdress, string salesToDate)
+SalesRep::SalesRep(string name, string shortAdress, string saleToDate)
 {
   this->name = name;
   this->shortAdress = shortAdress;
   this->salesToDate = salesToDate;
 }
 
-void Client::SetName(string name)
+void SalesRep::SetName(string name)
 {
   this->name = name;
 }
 
-void Client::SetShortAdress(string shortAdress)
+void SalesRep::SetShortAdress(string shortAdress)
 {
   this->shortAdress = shortAdress;
 }
 
-void Client::SetSalesToDate(string salesToDate)
+void SalesRep::SetSalesToDate(string salesToDate)
 {
   this->salesToDate = salesToDate;
 }
 
-string Client::GetName()
+string SalesRep::GetName()
 {
   return this->name;
 }
 
-string Client::GetShortAdress()
+string SalesRep::GetShortAdress()
 {
   return this->shortAdress;
 }
 
-string Client::GetSalesToDate()
+string SalesRep::GetSalesToDate()
 {
   return this->salesToDate;
 }
 
-void Client::PrintClient()
+void SalesRep::PrintSalesRep()
 {
   cout << GetName() << " " << GetShortAdress() << " " << GetSalesToDate() << endl;
 }
