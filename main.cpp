@@ -1,7 +1,10 @@
 #include <iostream>
+#include "include/salesManager.h"
+
 
 int main() {
-  std::cout << "Hello World!\n";
+	loadInfo();
+ return 0;
 }
 /*
 
@@ -14,7 +17,7 @@ Pseudocode:
 		Products - product/service name, and any current discount. 
 		Sales - product, date, client, salesRep.
 
-	Main:
+	salesManager:
 
 		vector <Client*> clients;
 		vector <SalesRep*> salesReps;
@@ -35,4 +38,8 @@ Pseudocode:
 		main(){
 		...call print menu in while loop...
 		}
+
+	Main:
+		loadInfo();
+		printMenu();
 */
